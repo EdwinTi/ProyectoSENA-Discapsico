@@ -35,13 +35,13 @@ public Connection Conectar() {
     return cx;
     }
 
-/*
+
 public static void main(String[] args) {
 
 Conexion dao = new Conexion();
 dao.Conectar();
 }
-*/
+
 
 
 }

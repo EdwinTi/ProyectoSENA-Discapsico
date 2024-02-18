@@ -38,9 +38,10 @@ public class Controlador extends HttpServlet {
             out.println("<title>Servlet controlador</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet controlador at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet controlador aiudaaa at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
+            request.getRequestDispatcher("principal.jsp");
         }
     }
 
