@@ -84,7 +84,7 @@ public class Ctrl_idTipoEntidad extends HttpServlet {
             String TipoEntidad=request.getParameter("txt_TipoEntidad");
             rs=tipedao.validar(TipoEntidad);
             if (rs !=null){
-                request.getRequestDispatcher("Controlador?accion=Principal").forward(request, response);
+                request.getRequestDispatcher("Principal.jsp").forward(request, response);
                 }else{
                 request.getRequestDispatcher("index.jsp").forward(request, response);          
             }
