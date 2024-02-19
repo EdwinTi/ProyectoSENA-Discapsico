@@ -19,20 +19,31 @@ public class TipoEntidadDAO {
     Connection con;
     PreparedStatement ps;
     ResultSet rs;
-    
-    public ResultSet validar (String TipoEntidad){
+     int rowsAffected = 0;
+    public int validar (String TipoEntidad){
         TipoEntidad tipe=new TipoEntidad();
-        String sql="INSERT INTO tipoentidad(TipoEntidad)values(=?) ";
+        String sql="INSERT INTO tipoentidad(TipoEntidad)values(?) ";
         try {
             con=cn.Conectar();
             ps=con.prepareStatement(sql);
             ps.setString(1, TipoEntidad);
-            rs=ps.executeQuery();
-            System.out.println("TipoEntidadDAO" + rs); 
+             rowsAffected =ps.executeUpdate();
+            System.out.println("TipoEntidadDAO: " + rowsAffected); 
         }
         catch (SQLException e){  
-           System.out.println("TipoEntidadDAO" + "Generó error"); 
-        }  
-        return rs;
+           System.out.println("TipoEntidadDAO" + "Generó error: "+e); 
+         } finally {
+        try {
+            if (ps != null) {
+                ps.close();
+            }
+            if (con != null) {
+                con.close();
+            }
+        } catch (SQLException e) {
+            System.out.println("Error al cerrar la conexión: " + e);
+        }
+    } 
+        return rowsAffected;
     }
 }

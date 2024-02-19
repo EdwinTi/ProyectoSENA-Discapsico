@@ -25,7 +25,7 @@ public class Ctrl_idTipoEntidad extends HttpServlet {
     TipoEntidadDAO tipedao=new TipoEntidadDAO();
     TipoEntidad tipe=new TipoEntidad ();
     ResultSet rs;
-    
+    int rowsAffected = 0;
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -80,11 +80,15 @@ public class Ctrl_idTipoEntidad extends HttpServlet {
             throws ServletException, IOException {
         //processRequest(request, response);
         String accion=request.getParameter("accion");
-        if (accion.equalsIgnoreCase("btn_idTipoEntidad")){
+        System.out.println("entre al post"+accion);
+        if (accion.equalsIgnoreCase("Ingresar")){
             String TipoEntidad=request.getParameter("txt_TipoEntidad");
-            rs=tipedao.validar(TipoEntidad);
-            if (rs !=null){
-                request.getRequestDispatcher("Principal.jsp").forward(request, response);
+            rowsAffected=tipedao.validar(TipoEntidad);
+            
+                System.out.println("variable rowsAffected en ctrl "+ rowsAffected);
+            if (rowsAffected !=0){
+                System.out.println("Cambio de Pagina");
+                request.getRequestDispatcher("principal.jsp").forward(request, response);
                 }else{
                 request.getRequestDispatcher("index.jsp").forward(request, response);          
             }
