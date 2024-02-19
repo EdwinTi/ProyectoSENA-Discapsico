@@ -20,7 +20,7 @@ public class TipoEntidadDAO {
     PreparedStatement ps;
     ResultSet rs;
      int rowsAffected = 0;
-    public int validar (String TipoEntidad){
+    public int insertar (String TipoEntidad){
         TipoEntidad tipe=new TipoEntidad();
         String sql="INSERT INTO tipoentidad(TipoEntidad)values(?) ";
         try {

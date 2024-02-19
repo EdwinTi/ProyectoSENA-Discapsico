@@ -83,7 +83,7 @@ public class Ctrl_idTipoEntidad extends HttpServlet {
         System.out.println("entre al post"+accion);
         if (accion.equalsIgnoreCase("Ingresar")){
             String TipoEntidad=request.getParameter("txt_TipoEntidad");
-            rowsAffected=tipedao.validar(TipoEntidad);
+            rowsAffected=tipedao.insertar(TipoEntidad);
             
                 System.out.println("variable rowsAffected en ctrl "+ rowsAffected);
             if (rowsAffected !=0){
