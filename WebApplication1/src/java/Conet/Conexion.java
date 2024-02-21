@@ -1,5 +1,5 @@
 
-   package conexion;
+   package Conet;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -16,7 +16,7 @@ String driver = "com.mysql.cj.jdbc.Driver";
 private String bd = "discapsico"; // Colacarle nombre de su BD
 private String url = "jdbc:mysql://localhost:3306/";
 private String user = "root";
-private String password = "";
+private String password = "root123";
 Connection cx;
 
 // Creamos el constructor el cual lleva el nombre de la clase
