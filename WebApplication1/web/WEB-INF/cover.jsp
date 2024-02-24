@@ -1,6 +1,5 @@
-
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +15,7 @@
     <div>
       <h1 class="float-md-start mb-0">DISCAPSICO</h1>
       <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page"  href="controlador?accion=registro">REGISTRO</a>
+        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">REGISTRO</a>
         <a class="nav-link fw-bold py-1 px-0" href="#"></a>
         <a class="nav-link fw-bold py-1 px-0" href="#"></a>
       </nav>
@@ -29,14 +28,14 @@
     <p class="lead"> Discapacidad personal y emocional, discapacidad en el funcionamiento familiar, discapacidad social y discapacidad laboral de la persona con afectación en su salud mental.
 </p>
     <p class="lead">
-      <a href="controlador?accion=inicioSesion" class="btn btn-lg btn-light fw-bold border-primary bg-white">INICIO SESION</a>
+      <a href="#" class="btn btn-lg btn-light fw-bold border-primary bg-white">INICIO SESION</a>
     </p>
   </main>
   
    </div>
 
   <footer class="mt-auto text-dark-50">
-    <p>Aplicacion de uso exclusivo <a href="https://www.saludcapital.gov.co/Paginas2/Inicio.aspx" class="text-dark">SECRETARIA DE SALUD </a>, de <a href="https://www.saludcapital.gov.co/Paginas2/Inicio.aspx" class="text-dark">BOGOTA</a>.</p>
+    <p>Aplicacion de uso exclusivo <a href="https://getbootstrap.com/" class="text-dark">SECRETARIA DE SALUD </a>, de <a href="https://twitter.com/mdo" class="text-dark">BOGOTA</a>.</p>
   </footer>
 </div>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>

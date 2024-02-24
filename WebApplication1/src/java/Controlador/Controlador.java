@@ -3,6 +3,7 @@ package Controlador;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -50,9 +51,25 @@ public class Controlador extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
-    }
+       
+        
+        
+         String action = request.getParameter("accion");
 
+        switch (action) {
+            case "inicioSesion":
+                
+                request.getRequestDispatcher("/WEB-INF/iniciosesion.jsp").forward(request, response);
+                break;
+                
+                
+              case "registro":
+                
+               request.getRequestDispatcher("/WEB-INF/registrarme.jsp").forward(request, response);
+                break;  
+                
+    }
+   }
     /**
      * Handles the HTTP <code>POST</code> method.
      *

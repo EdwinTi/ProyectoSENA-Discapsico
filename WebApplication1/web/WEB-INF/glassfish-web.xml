@@ -17,10 +17,6 @@
 -->
 <glassfish-web-app error-url="">
   <context-root>/index</context-root>
-  <service-ref>
-    <service-ref-name>service_ref1</service-ref-name>
-    <port-info/>
-  </service-ref>
   <class-loader delegate="true"/>
   <jsp-config>
     <property name="keepgenerated" value="true">

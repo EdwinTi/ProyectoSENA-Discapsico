@@ -75,6 +75,8 @@ public class ControladorEspecificaciones extends HttpServlet {
                 break;
         }
     }
+    
+    
 //Metodo Registrar
 
     private void registrarEspecificaciones(HttpServletRequest request, HttpServletResponse response)
