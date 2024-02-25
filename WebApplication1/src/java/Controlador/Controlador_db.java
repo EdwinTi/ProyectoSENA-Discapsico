@@ -16,8 +16,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author admin
  */
-@WebServlet(name = "ControladorDataBase", urlPatterns = {"/ControladorDataBase"})
-public class ControladorDB extends HttpServlet {
+@WebServlet(name = "Controlador_db", urlPatterns = {"/Controlador_db"})
+public class Controlador_db extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -36,10 +36,10 @@ public class ControladorDB extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet ControladorDataBase</title>");            
+            out.println("<title>Servlet Controlador_db</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet ControladorDataBase at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet Controlador_db at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -71,20 +71,24 @@ public class ControladorDB extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //processRequest(request, response);
+        processRequest(request, response);
         System.out.println("**-  -> llegue a ctrlDB");
-        
-        String action = request.getParameter("accion");
+         String action = request.getParameter("accion");
        
+         
+         
+         
         switch (action) {
             case "Ingresar":
-                string user=request.getParameter("txtuser");
-                string pas=request.getParameter("txtpass");
+                String user=request.getParameter("txtuser");
+                String pas=request.getParameter("txtpass");
                 System.out.println("variableUsuario"+user);
                // request.getRequestDispatcher("/WEB-INF/iniciosesion.jsp").forward(request, response);
                 break; 
     }
+        
     }
+
 
     /**
      * Returns a short description of the servlet.
