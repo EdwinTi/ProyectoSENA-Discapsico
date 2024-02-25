@@ -4,6 +4,9 @@
  */
 package Controlador;
 
+import Modelo.TipoEntidad;
+import Modelo.Usuarios;
+import Persistencia.DaoTipoEntidad;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -80,11 +83,13 @@ public class Controlador_db extends HttpServlet {
          
         switch (action) {
             case "Ingresar":
-                String user=request.getParameter("txtuser");
-                String pas=request.getParameter("txtpass");
-                System.out.println("variableUsuario"+user);
-               // request.getRequestDispatcher("/WEB-INF/iniciosesion.jsp").forward(request, response);
-                break; 
+                iniciarSesion(request,response);
+                 break;
+                        
+                  
+                
+                
+               
     }
         
     }
@@ -99,5 +104,31 @@ public class Controlador_db extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
+
+    private void iniciarSesion(HttpServletRequest request, HttpServletResponse response) 
+            throws ServletException, IOException {
+        
+        try {
+            String user=request.getParameter("txtuser");
+            String pas=request.getParameter("txtpass");
+            
+            Usuarios usuarios= new Usuarios();
+          usuarios.setCorreo(user);
+          usuarios.setPassword(pas);
+            if (DaoUsuarios.registrar(Iniciosesion)){
+                request.setAttribute("mensaje", "Registro Fue Exitoso");
+            } else {
+                request.setAttribute("mensaje", "Error! no se Registro, validar campos ingresados");
+            }
+        }
+        catch (Exception ex) {
+            ex.printStackTrace();
+            request.setAttribute("mensaje", "Error al registrar  la Especificacion");
+            
+        }
+               
+                System.out.println("variableUsuario"+user);
+        
+            }
 
 }

@@ -26,6 +26,10 @@ public class Usuarios {
         this.Persona_IdPersona = Persona_IdPersona;
     }
 
+    public Usuarios() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     public int getIdUsuario() {
         return IdUsuario;
     }
