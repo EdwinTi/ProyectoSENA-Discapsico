@@ -1,39 +1,51 @@
 <!DOCTYPE html><!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
-   <body class=" text-bg-light">
-        
-<div class="container">
-  <main>
-  
-  <div class="container">
+  <body class=" text-bg-light">
+<main>
+ <div class="container">
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
       <a href="controlador?accion=home" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+       
+          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
         <span class="fs-4">DISCAPSICO</span>
-    
 
       <ul class="nav nav-pills">
         <li class="nav-item"><a href="controlador?accion=home" class="nav-link">Home</a></li>
         <li class="nav-item"><a href="controlador?accion=crearRegistro" class="nav-link">Crear Registro</a></li>
         <li class="nav-item"><a href="controlador?accion=consultarRegistro" class="nav-link">Consultar</a></li>
         <li class="nav-item"><a href="controlador?accion=cerrarSesion" class="nav-link">Cerrar Sesion</a></li>
-    <div class="py-5 text-center">
-     
-      <h2>DISCAPSICO</h2>
-      <p class="lead">Te invitamos a registrar a pacientes en nuestro sistema de información DISCAPSICO. Con tu ayuda, podremos recopilar información precisa y detallada que nos permita ofrecer servicios personalizados y adaptados a las necesidades de cada persona..</p>
+ 
+ 
+   <div class="container mt-5 mb-5 px-0">
+    <div class="card">
+      <div class="card-body text-bg-success" >
+        <h5 class="card-title">Actualizar Registro paciente</h5>
+        <p>Aqui puedes gestionar las busquedas de los pacientes  por numero de cedula para actualizar datos.</p>
+        <form>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Buscar..." aria-label="Buscar" aria-describedby="basic-addon2">
+            <button class="btn btn-primary" type="button" id="button-addon2"><i class="bi bi-search"></i>Buscar</button>
+          </div>
+        </form>
+      </div>
     </div>
+  </div>
+   
+   
+  
+
 
    <div class="container">
         </form>
       </div>
       <div class="col-md-12 col-lg-11">
-        <h4 class="mb-3">Registro Paciente</h4>
+        <h4 class="mb-3">Actualizar Datos Paciente</h4>
         <form class="needs-validation" novalidate>
           <div class="row g-3">
             <div class="col-sm-6">
@@ -59,7 +71,7 @@
               </div>
             </div>
             <div class="col-sm-6">
-              <label for="firstName" class="form-label">Segundo Nombre</label>
+              <label for="firstName" class="form-label">Segundo Apellido</label>
               <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
               <div class="invalid-feedback">
                 Valid first name is required.
@@ -267,11 +279,9 @@
             
            <hr class="my-4">
 
-            <a href="controlador?accion=guardarCambios" class="w-100 btn btn-primary btn-lg">
-                 Guardar
-              </a>     
+                 
 
-          
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Guardar</button>
         </form>
       </div>
     </div>
@@ -279,7 +289,7 @@
   </main>
 
   <footer class="my-5 pt-5 text-body-secondary text-center text-small">
-    <p class="mb-1"> &copy; 2017 ? 2023 Secretaria de salud</p>
+    <p class="mb-1">&copy; 2017?2023 Secretaria de salud</p>
    
  <footer class="pt-3 mt-4 text-body-secondary border-top">
       &copy; Secretaría Distrital de Salud
@@ -300,6 +310,3 @@ Políticas de Protección y Tratamiento de Datos Personales de la Secretaría Distr
 
     <script src="checkout.js"></script></body>
 </html>
-
-
-   

@@ -1,5 +1,5 @@
-<!DOCTYPE html><!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,62 +22,23 @@
         <li class="nav-item"><a href="controlador?accion=crearRegistro" class="nav-link">Crear Registro</a></li>
         <li class="nav-item"><a href="controlador?accion=consultarRegistro" class="nav-link">Consultar</a></li>
         <li class="nav-item"><a href="controlador?accion=cerrarSesion" class="nav-link">Cerrar Sesion</a></li>
- 
- 
-      
-    
-    <div class="row align-items-md-stretch mt-5 ">
-      <div class="col-md-6 mt-2">
-        <div class="h-100 p-5 text-bg-success rounded-3">
-          <h2>Gestiona</h2>
-          <p>Aqui puedes gestionar ingreso de informacion Tu contribución es fundamental para brindar un mejor servicio  ¡Gracias por ser parte de nuestro equipo y por tu colaboración!.</p>
         
-          <div class="d-grid gap-2">
-             <a href="controlador?accion=crearRegistro" class="btn btn-outline-light btn-lg">
-                Crear Registro
-             </a>    
-                 
-              <a href="controlador?accion=consultarRegistro" class="btn btn-outline-light btn-lg">
-                 Consultar Registro
-              </a>   
-              
-              <a href="controlador?accion=actualizaDatosP" class="btn btn-outline-light btn-lg">
-                 Actualizar Registro
-              </a>   
-              
-              <a href="controlador?accion=borrarRegistroP" class="btn btn-outline-light btn-lg">
-                 Borrar Registro
-              </a>   
-    
-  </div>
-         
+        <div class="row align-items-md-stretch mt-5 ">
+      <div class="col-md-14 mt-2">
+        <div class="h-100 p-5 text-bg-primary rounded-3">
+          <h2>Cerrar Sesión</h2>
+          <p>esta cerrando sesión en DISCAPSICO esta seguro.</p>
    
-        </div>
+     <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Cancelar</button>
+                
+        <a href="controlador?accion=cover" class="btn btn-success">
+                 Aceptar
+              </a> 
+        
       </div>
-      <div class="col-md-6 mt-2">
-         <div class="h-100 p-5 text-bg-primary rounded-3">
-          <h2>Reportes</h2>
-          
-          <p>Aqui puedes gestionar los reportes  Tu contribución es fundamental para brindar un mejor servicio  ¡Gracias por ser parte de nuestro equipo y por tu colaboración!.</p>
-          <div class="d-grid gap-2">
-              
-       <a href="controlador?accion=resumenInformes" class="btn btn-outline-light btn-lg">
-                 Resumen
-              </a>        
-              
-              <a href="controlador?accion=exportar" class="btn btn-outline-light btn-lg">
-                 Exportar
-              </a>
-  
-              <a href="controlador?accion=puntajeTestCal" class="btn btn-outline-light btn-lg">
-                 Puntaje Test Caldas
-              </a>
-  
   </div>
-        </div>
-      </div>
-    </div>
-
+</nav>
     <footer class="pt-3 mt-4 text-body-secondary border-top">
       &copy; Secretaría Distrital de Salud
 Cra 32 #12-81 Bogotá, Colombia

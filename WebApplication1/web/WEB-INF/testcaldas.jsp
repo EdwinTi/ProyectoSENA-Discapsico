@@ -183,9 +183,10 @@
             
              <hr class="my-4">
 
-                 
-
-          <button class="w-100 btn btn-success btn-lg" type="submit">Guardar</button>
+          <a href="controlador?accion=guardarTest" class="w-100 btn btn-primary btn-lg">
+                 Guardar
+              </a>           
+         
         </form>
       </div>
     </div>

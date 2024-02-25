@@ -138,7 +138,7 @@
   </main>
 
   <footer class="my-5 pt-5 text-body-secondary text-center text-small">
-    <p class="mb-1">&copy; 2017?2023 Secretaria de salud</p>
+    <p class="mb-1">&copy; 2017 ? 2023 Secretaria de salud</p>
    
  <footer class="pt-3 mt-4 text-body-secondary border-top">
       &copy; Secretaría Distrital de Salud

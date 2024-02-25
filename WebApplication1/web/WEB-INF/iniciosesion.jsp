@@ -12,7 +12,7 @@
    <body class="d-flex align-items-center py-4 bg-body-tertiary">
     
 <main class="form-signin w-100 m-auto">
-  <form>
+  <form action="controlador?accion=home" method="post">
    <div class="container">
   <main>
     <div class="py-5 text-center">

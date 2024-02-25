@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import util.Generarpdf;
 
-public class ControladorEspecificaciones extends HttpServlet {
+public class Controladorprueba1 extends HttpServlet {
 
     TipoEntidad tipoEntidad = new TipoEntidad();
     DaoTipoEntidad daoTipoEntidad = new DaoTipoEntidad();

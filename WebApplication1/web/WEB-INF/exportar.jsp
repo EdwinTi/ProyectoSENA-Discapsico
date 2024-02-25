@@ -1,4 +1,4 @@
-<!DOCTYPE html><!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
@@ -22,62 +22,28 @@
         <li class="nav-item"><a href="controlador?accion=crearRegistro" class="nav-link">Crear Registro</a></li>
         <li class="nav-item"><a href="controlador?accion=consultarRegistro" class="nav-link">Consultar</a></li>
         <li class="nav-item"><a href="controlador?accion=cerrarSesion" class="nav-link">Cerrar Sesion</a></li>
- 
- 
-      
-    
-    <div class="row align-items-md-stretch mt-5 ">
-      <div class="col-md-6 mt-2">
-        <div class="h-100 p-5 text-bg-success rounded-3">
-          <h2>Gestiona</h2>
-          <p>Aqui puedes gestionar ingreso de informacion Tu contribución es fundamental para brindar un mejor servicio  ¡Gracias por ser parte de nuestro equipo y por tu colaboración!.</p>
         
-          <div class="d-grid gap-2">
-             <a href="controlador?accion=crearRegistro" class="btn btn-outline-light btn-lg">
-                Crear Registro
-             </a>    
-                 
-              <a href="controlador?accion=consultarRegistro" class="btn btn-outline-light btn-lg">
-                 Consultar Registro
-              </a>   
-              
-              <a href="controlador?accion=actualizaDatosP" class="btn btn-outline-light btn-lg">
-                 Actualizar Registro
-              </a>   
-              
-              <a href="controlador?accion=borrarRegistroP" class="btn btn-outline-light btn-lg">
-                 Borrar Registro
-              </a>   
-    
-  </div>
-         
-   
-        </div>
+     
+
+<div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalChoice">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content rounded-3 shadow">
+      <div class="modal-body p-4 text-center">
+        <h5 class="mb-0">En DESARROLLO?</h5>
+        <p class="mb-0">1En DESARROLLO.</p>
       </div>
-      <div class="col-md-6 mt-2">
-         <div class="h-100 p-5 text-bg-primary rounded-3">
-          <h2>Reportes</h2>
-          
-          <p>Aqui puedes gestionar los reportes  Tu contribución es fundamental para brindar un mejor servicio  ¡Gracias por ser parte de nuestro equipo y por tu colaboración!.</p>
-          <div class="d-grid gap-2">
-              
-       <a href="controlador?accion=resumenInformes" class="btn btn-outline-light btn-lg">
-                 Resumen
-              </a>        
-              
-              <a href="controlador?accion=exportar" class="btn btn-outline-light btn-lg">
-                 Exportar
-              </a>
-  
-              <a href="controlador?accion=puntajeTestCal" class="btn btn-outline-light btn-lg">
-                 Puntaje Test Caldas
-              </a>
-  
-  </div>
-        </div>
+      <div class="modal-footer flex-nowrap p-0">
+        <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0 border-end"><strong>Yes, En DESARROLLO</strong></button>
+        <button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 py-3 m-0 rounded-0" data-bs-dismiss="modal">No En DESARROLLO</button>
       </div>
     </div>
+  </div>
+</div>
 
+
+
+    </body>
+</html>
     <footer class="pt-3 mt-4 text-body-secondary border-top">
       &copy; Secretaría Distrital de Salud
 Cra 32 #12-81 Bogotá, Colombia
@@ -97,3 +63,4 @@ Políticas de Protección y Tratamiento de Datos Personales de la Secretaría Distr
 
     </body>
 </html>
+        

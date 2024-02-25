@@ -68,6 +68,71 @@ public class Controlador extends HttpServlet {
                request.getRequestDispatcher("/WEB-INF/registrarme.jsp").forward(request, response);
                 break;  
                 
+                 case "home":
+                
+               request.getRequestDispatcher("/WEB-INF/home.jsp").forward(request, response);
+                break;  
+                
+                case "crearRegistro":
+                
+               request.getRequestDispatcher("/WEB-INF/registropaciente.jsp").forward(request, response);
+                break;  
+                
+               case "consultarRegistro":
+                
+               request.getRequestDispatcher("/WEB-INF/consultarRegistro.jsp").forward(request, response);
+                break;   
+                
+              case "cerrarSesion":
+                
+               request.getRequestDispatcher("/WEB-INF/cerrarSesion.jsp").forward(request, response);
+                break;   
+                
+              case "actualizaDatosP":
+                
+               request.getRequestDispatcher("/WEB-INF/actualizaDatosPaciente.jsp").forward(request, response);
+                break;
+                
+                case "borrarRegistroP":
+                
+               request.getRequestDispatcher("/WEB-INF/borrarRegistro.jsp").forward(request, response);
+                break;
+                
+                case "cover":
+                
+               request.getRequestDispatcher("/WEB-INF/cover.jsp").forward(request, response);
+                break;
+                
+                case "resumenInformes":
+                
+               request.getRequestDispatcher("/WEB-INF/resumenInforrmes.jsp").forward(request, response);
+                break; 
+                
+                 case "exportar":
+                
+               request.getRequestDispatcher("/WEB-INF/exportar.jsp").forward(request, response);
+                break; 
+                
+                case "puntajeTestCal":
+                
+               request.getRequestDispatcher("/WEB-INF/puntajeTestCaldas.jsp").forward(request, response);
+                break; 
+                
+                 case "testCaldas":
+                
+               request.getRequestDispatcher("/WEB-INF/testcaldas.jsp").forward(request, response);
+                break; 
+                
+                 case "guardarCambios":
+                
+               request.getRequestDispatcher("/WEB-INF/guardarCambios.jsp").forward(request, response);
+                break; 
+                
+                 case "guardarTest":
+                
+               request.getRequestDispatcher("/WEB-INF/guardarTest.jsp").forward(request, response);
+                break; 
+                
     }
    }
     /**
@@ -81,9 +146,20 @@ public class Controlador extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
-    }
+        
+        String action = request.getParameter("accion");
 
+        switch (action) {
+            case "home":
+                
+               request.getRequestDispatcher("/WEB-INF/home.jsp").forward(request, response);
+                break;  
+        
+        
+        
+       
+    }
+    }
     /**
      * Returns a short description of the servlet.
      *
