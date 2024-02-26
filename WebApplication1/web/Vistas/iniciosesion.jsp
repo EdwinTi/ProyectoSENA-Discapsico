@@ -12,7 +12,7 @@
    <body class="d-flex align-items-center py-4 bg-body-tertiary">
     
 <main class="form-signin w-100 m-auto">
-  <form action="controlador?accion=home" method="post">
+  <form action="controlador?accion=home" method="POST">
    <div class="container">
   <main>
     <div class="py-5 text-center">
@@ -32,6 +32,7 @@
    
     <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
     <div class="login-signup-now" data-uia="login-signup-now">¿Primera vez en discapsico? <a class="" target="_self" href="controlador?accion=registro">Registrate ahora</a>.</div>
+    
   </form>
 </main>
 <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>

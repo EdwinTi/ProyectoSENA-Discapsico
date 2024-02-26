@@ -54,11 +54,13 @@
     <label for="pregunta4" class="form-label">4. ¿Para que siga el tratamiento, es necesario que otros se lo recuerden?</label>
     <br>
     <div class="btn-group" role="group" aria-label="Pregunta 4">
-        <input type="radio" class="btn-check" name="pregunta4" id="pregunta4-no" autocomplete="off" checked>
+        <input type="radio" class="btn-check" name="pregunta4" value="2" id="pregunta4_no" autocomplete="off" checked>
         <label class="btn btn-outline-success" for="pregunta4-no">No</label>
-        <input type="radio" class="btn-check" name="pregunta4" id="pregunta4-si" autocomplete="off">
+        <input type="radio" class="btn-check" name="pregunta4" value="1" id="pregunta4_si" autocomplete="off">
         <label class="btn btn-outline-success" for="pregunta4-si">Sí</label>
     </div>
+    
+    
 </div>
 
 <!-- Pregunta 5 -->
@@ -66,9 +68,9 @@
     <label for="pregunta5" class="form-label">5. ¿Cuida su alimentación?</label>
     <br>
     <div class="btn-group" role="group" aria-label="Pregunta 5">
-        <input type="radio" class="btn-check" name="pregunta5" id="pregunta5-no" autocomplete="off" checked>
+        <input type="radio" class="btn-check" name="pregunta5"  value="1" id="pregunta5-no" autocomplete="off" checked>
         <label class="btn btn-outline-success" for="pregunta5-no">No</label>
-        <input type="radio" class="btn-check" name="pregunta5" id="pregunta5-si" autocomplete="off">
+        <input type="radio" class="btn-check" name="pregunta5" value="2" id="pregunta5-si" autocomplete="off">
         <label class="btn btn-outline-success" for="pregunta5-si">Sí</label>
     </div>
 </div>
@@ -108,7 +110,7 @@
         <label class="btn btn-outline-success" for="pregunta8-si">Sí</label>
     </div>
 </div>
-
+ <h6>DPE</h6>
 <!-- Pregunta 9 -->
 <div class="mb-3">
     <label for="pregunta9" class="form-label">9. ¿Asiste a los programas de promoción y prevención?</label>
