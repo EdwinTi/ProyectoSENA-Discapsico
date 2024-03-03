@@ -185,7 +185,7 @@
             
              <hr class="my-4">
 
-          <a href="controlador?accion=guardarTest" class="w-100 btn btn-primary btn-lg">
+          <a href="/Vistas/guardarCambios.jsp" class="w-100 btn btn-primary btn-lg">
                  Guardar
               </a>           
          

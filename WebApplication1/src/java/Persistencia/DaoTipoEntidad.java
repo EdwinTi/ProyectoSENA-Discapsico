@@ -38,20 +38,20 @@ public class DaoTipoEntidad {
 
     }
 
-      public static List<Productos> listar(){
-        List<Productos> listap = new ArrayList<>();
+      public static List<TipoEntidad> listar(){
+        List<TipoEntidad> listap = new ArrayList<>();
         try {
             con = conexion.Conectar();
-            String sql = "SELECT * FROM productos";
+            String sql = "SELECT * FROM TipoEntidad";
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
             
             while(rs.next()){
-               Productos productos = new Productos();
-               productos.setIdProductos(rs.getInt("idproductos"));                 
+               TipoEntidad tipoEntidad = new TipoEntidad();
+               tipoEntidad.setIdTipoEntidad(rs.getInt("IdTipoEntidad"));                 
                
-               productos.setNombres_Productos(rs.getString("nombres_Productos"));
-               listap.add(productos);
+               tipoEntidad. setTipoEntidad(rs.getString("tipoEntidad"));
+               listap.add(tipoEntidad);
             }
         } catch (Exception e) {
         }

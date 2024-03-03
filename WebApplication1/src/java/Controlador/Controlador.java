@@ -141,6 +141,7 @@ public class Controlador extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
          System.out.println("**-  -> llegue a dopost");
+         
         String action = request.getParameter("accion");
 
         switch (action) {
@@ -149,7 +150,11 @@ public class Controlador extends HttpServlet {
                request.getRequestDispatcher("/Vistas/home.jsp").forward(request, response);
                 break;  
         
-        
+      
+            case "test":
+                
+               request.getRequestDispatcher("/Vistas/testcaldas.jsp").forward(request, response);
+                break;  
         
        
     }

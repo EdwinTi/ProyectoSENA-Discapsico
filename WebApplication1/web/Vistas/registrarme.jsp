@@ -125,7 +125,21 @@
                 Please provide a valid Localidad.
               </div>
             </div>
-
+               
+  <div class="col-md-5">
+              <label for="country" class="form-label">Subred</label>
+              <select class="form-select" id="country" required>
+               <option value="">Seleccione....</option>
+                <option value="">Centro Oriente</option> 
+               <option value="">Norte</option>
+                <option>Sur</option>
+                <option value="">Sur Oriente</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid Ciudad.
+              </div>
+            </div>
+               
            <hr class="my-4">
 
                  

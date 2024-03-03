@@ -6,23 +6,23 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
-   <body class=" text-bg-light">
-        
-<div class="container">
-  <main>
+    <body class=" text-bg-light">
+   
+<main>
   
   <div class="container">
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="controlador?accion=home" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <a href="/Vistas/home.jsp" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
         <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
         <span class="fs-4">DISCAPSICO</span>
     
 
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="controlador?accion=home" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="controlador?accion=crearRegistro" class="nav-link">Crear Registro</a></li>
-        <li class="nav-item"><a href="controlador?accion=consultarRegistro" class="nav-link">Consultar</a></li>
-        <li class="nav-item"><a href="controlador?accion=cerrarSesion" class="nav-link">Cerrar Sesion</a></li>
+        <li class="nav-item"><a href="/Vistas/home.jsp" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="/Vistas/registropaciente.jsp" class="nav-link">Crear Registro</a></li>
+        <li class="nav-item"><a href="/Vistas/consultarRegistro.jsp" class="nav-link">Consultar</a></li>
+        <li class="nav-item"><a href="/Vistas/cerrarSesion.jsp" class="nav-link">Cerrar Sesion</a></li>
+        
     <div class="py-5 text-center">
      
       <h2>DISCAPSICO</h2>
@@ -30,8 +30,8 @@
     </div>
 
    <div class="container">
-        </form>
-      </div>
+        <form action="../controlador?accion=test" method="post" >
+
       <div class="col-md-12 col-lg-11">
         <h4 class="mb-3">Registro Paciente</h4>
         <form class="needs-validation" novalidate>
@@ -265,17 +265,32 @@
               </div>
             </div>
             
+                <div class="col-md-5">
+              <label for="country" class="form-label">Subred</label>
+              <select class="form-select" id="country" required>
+               <option value="">Seleccione....</option>
+                <option value="">Centro Oriente</option> 
+               <option value="">Norte</option>
+                <option>Sur</option> 
+                <option value="">Sur Oriente</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid Ciudad.
+              </div>
+            </div>
            <hr class="my-4">
 
-            <a href="controlador?accion=guardarCambios" class="w-100 btn btn-primary btn-lg">
+            <a href="/Vistas/testcaldas.jsp" class="w-100 btn btn-primary btn-lg">
                  Guardar
               </a>     
 
           
         </form>
+              </div>
       </div>
     </div>
      </div>
+            
   </main>
 
   <footer class="my-5 pt-5 text-body-secondary text-center text-small">
