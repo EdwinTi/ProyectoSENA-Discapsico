@@ -78,8 +78,8 @@ public class ControladorDB extends HttpServlet {
        
         switch (action) {
             case "Ingresar":
-                string user=request.getParameter("txtuser");
-                string pas=request.getParameter("txtpass");
+                String user=request.getParameter("txtuser");
+                String pas=request.getParameter("txtpass");
                 System.out.println("variableUsuario"+user);
                // request.getRequestDispatcher("/WEB-INF/iniciosesion.jsp").forward(request, response);
                 break; 

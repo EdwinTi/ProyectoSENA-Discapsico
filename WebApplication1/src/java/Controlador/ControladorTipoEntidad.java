@@ -1,4 +1,4 @@
-package Controlador;
+/*package Controlador;
 
 import Modelo.Consecutivo;
 import Modelo.DatosPdf;
@@ -277,3 +277,4 @@ public class Controladorprueba1 extends HttpServlet {
 
 }
 
+*/
