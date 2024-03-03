@@ -12,16 +12,16 @@
   
   <div class="container">
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="controlador?accion=home" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <a href="/Vistas/home.jsp" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
         <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
         <span class="fs-4">DISCAPSICO</span>
     
 
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="controlador?accion=home" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="controlador?accion=crearRegistro" class="nav-link">Crear Registro</a></li>
-        <li class="nav-item"><a href="controlador?accion=consultarRegistro" class="nav-link">Consultar</a></li>
-        <li class="nav-item"><a href="controlador?accion=cerrarSesion" class="nav-link">Cerrar Sesion</a></li>
+        <li class="nav-item"><a href="/Vistas/home.jsp" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="/Vistas/registropaciente.jsp" class="nav-link">Crear Registro</a></li>
+        <li class="nav-item"><a href="/Vistas/consultarRegistro.jsp" class="nav-link">Consultar</a></li>
+        <li class="nav-item"><a href="/Vistas/cerrarSesion.jsp" class="nav-link">Cerrar Sesion</a></li>
  
  
       
@@ -33,19 +33,23 @@
           <p>Aqui puedes gestionar ingreso de informacion Tu contribución es fundamental para brindar un mejor servicio  ¡Gracias por ser parte de nuestro equipo y por tu colaboración!.</p>
         
           <div class="d-grid gap-2">
-             <a href="controlador?accion=crearRegistro" class="btn btn-outline-light btn-lg">
+             <a href="/Vistas/registropaciente.jsp" class="btn btn-outline-light btn-lg">
                 Crear Registro
              </a>    
                  
-              <a href="controlador?accion=consultarRegistro" class="btn btn-outline-light btn-lg">
+              <a href="/Vistas/consultarRegistro.jsp" class="btn btn-outline-light btn-lg">
                  Consultar Registro
               </a>   
               
-              <a href="controlador?accion=actualizaDatosP" class="btn btn-outline-light btn-lg">
+              <a href="/Vistas/actualizaDatosPaciente.jsp" class="btn btn-outline-light btn-lg">
                  Actualizar Registro
               </a>   
               
-              <a href="controlador?accion=borrarRegistroP" class="btn btn-outline-light btn-lg">
+               <a href="/Vistas/puntajeTestCaldas.jsp" class="btn btn-outline-light btn-lg">
+                 Puntaje Test Caldas
+              </a>
+              
+              <a href="/Vistas/borrarRegistro.jsp" class="btn btn-outline-light btn-lg">
                  Borrar Registro
               </a>   
     
@@ -61,18 +65,15 @@
           <p>Aqui puedes gestionar los reportes  Tu contribución es fundamental para brindar un mejor servicio  ¡Gracias por ser parte de nuestro equipo y por tu colaboración!.</p>
           <div class="d-grid gap-2">
               
-       <a href="controlador?accion=resumenInformes" class="btn btn-outline-light btn-lg">
+       <a href="/Vistas/resumenInforrmes.jsp" class="btn btn-outline-light btn-lg">
                  Resumen
               </a>        
               
-              <a href="controlador?accion=exportar" class="btn btn-outline-light btn-lg">
+              <a href="/Vistas/exportar.jsp" class="btn btn-outline-light btn-lg">
                  Exportar
               </a>
   
-              <a href="controlador?accion=puntajeTestCal" class="btn btn-outline-light btn-lg">
-                 Puntaje Test Caldas
-              </a>
-  
+               
   </div>
         </div>
       </div>

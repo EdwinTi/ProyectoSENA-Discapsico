@@ -1,81 +1,69 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Modelo;
 
-/**
- *
- * @author admin
- */
 public class Usuarios {
-    
-    int IdUsuario;
-    String NombreUsuario;
-    String Correo;
-    String  Password;      
-    int   Entidad_IdEntidad;     
-    int Persona_IdPersona;
 
-    public Usuarios(int IdUsuario, String NombreUsuario, String Correo, String Password, int Entidad_IdEntidad, int Persona_IdPersona) {
-        this.IdUsuario = IdUsuario;
-        this.NombreUsuario = NombreUsuario;
-        this.Correo = Correo;
-        this.Password = Password;
-        this.Entidad_IdEntidad = Entidad_IdEntidad;
-        this.Persona_IdPersona = Persona_IdPersona;
-    }
-
-    public Usuarios() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    private int idUsuario;
+    private String nombres;
+    private int perfilId;
+    private String usuario;
+    private String clave;
+    private String correo;
+    private int entidadId;
 
     public int getIdUsuario() {
-        return IdUsuario;
+        return idUsuario;
     }
 
-    public String getNombreUsuario() {
-        return NombreUsuario;
+    public void setIdUsuario(int idUsuario) {
+        this.idUsuario = idUsuario;
+    }
+
+    public String getNombres() {
+        return nombres;
+    }
+
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
+    }
+
+    public int getPerfilId() {
+        return perfilId;
+    }
+
+    public void setPerfilId(int perfilId) {
+        this.perfilId = perfilId;
+    }
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public String getClave() {
+        return clave;
+    }
+
+    public void setClave(String clave) {
+        this.clave = clave;
     }
 
     public String getCorreo() {
-        return Correo;
+        return correo;
     }
 
-    public String getPassword() {
-        return Password;
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
 
-    public int getEntidad_IdEntidad() {
-        return Entidad_IdEntidad;
+    public int getEntidadId() {
+        return entidadId;
     }
 
-    public int getPersona_IdPersona() {
-        return Persona_IdPersona;
+    public void setEntidadId(int entidadId) {
+        this.entidadId = entidadId;
     }
 
-    public void setIdUsuario(int IdUsuario) {
-        this.IdUsuario = IdUsuario;
-    }
-
-    public void setNombreUsuario(String NombreUsuario) {
-        this.NombreUsuario = NombreUsuario;
-    }
-
-    public void setCorreo(String Correo) {
-        this.Correo = Correo;
-    }
-
-    public void setPassword(String Password) {
-        this.Password = Password;
-    }
-
-    public void setEntidad_IdEntidad(int Entidad_IdEntidad) {
-        this.Entidad_IdEntidad = Entidad_IdEntidad;
-    }
-
-    public void setPersona_IdPersona(int Persona_IdPersona) {
-        this.Persona_IdPersona = Persona_IdPersona;
-    }
-    
 }

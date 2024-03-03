@@ -12,14 +12,16 @@
     
        
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    
   <header class="mb-auto">
     <div>
       <h1 class="float-md-start mb-0">DISCAPSICO</h1>
       <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page"  href="controlador?accion=registro">REGISTRO</a>
+        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page"  href="Vistas/registrarme.jsp">REGISTRO</a>
         <a class="nav-link fw-bold py-1 px-0" href="#"></a>
-        <a class="nav-link fw-bold py-1 px-0" href="#"></a>
+        <a class="nav-link fw-bold py-1 px-0" href=""Vistas/registrarme.jsp"></a>
       </nav>
+ 
     </div>
   </header>
   
@@ -29,7 +31,7 @@
     <p class="lead"> Discapacidad personal y emocional, discapacidad en el funcionamiento familiar, discapacidad social y discapacidad laboral de la persona con afectación en su salud mental.
 </p>
     <p class="lead">
-      <a href="controlador?accion=inicioSesion" class="btn btn-lg btn-light fw-bold border-primary bg-white">INICIO SESION</a>
+      <a href="Vistas/iniciosesion.jsp" class="btn btn-lg btn-light fw-bold border-primary bg-white">INICIO SESION</a>
     </p>
   </main>
   

@@ -6,22 +6,22 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
-  <body class=" text-bg-light">
+    <body class=" text-bg-light">
    
 <main>
   
   <div class="container">
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="controlador?accion=home" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <a href="/Vistas/home.jsp" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
         <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
         <span class="fs-4">DISCAPSICO</span>
     
 
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="controlador?accion=home" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="controlador?accion=crearRegistro" class="nav-link">Crear Registro</a></li>
-        <li class="nav-item"><a href="controlador?accion=consultarRegistro" class="nav-link">Consultar</a></li>
-        <li class="nav-item"><a href="controlador?accion=cerrarSesion" class="nav-link">Cerrar Sesion</a></li>
+        <li class="nav-item"><a href="/Vistas/home.jsp" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="/Vistas/registropaciente.jsp" class="nav-link">Crear Registro</a></li>
+        <li class="nav-item"><a href="/Vistas/consultarRegistro.jsp" class="nav-link">Consultar</a></li>
+        <li class="nav-item"><a href="/Vistas/cerrarSesion.jsp" class="nav-link">Cerrar Sesion</a></li>
         
         
   <div class="row align-items-md-stretch mt-5 ">
@@ -39,10 +39,10 @@
         Seguro de guardar los cambios realizados
       </div>
       <div class="modal-footer">
-        <a href="controlador?accion=crearRegistro" class="btn btn-secondary">
+        <a href="/Vistas/testcaldas.jsp" class="btn btn-secondary">
                  Cerrar
               </a> 
-          <a href="controlador?accion=testCaldas" class="btn btn-success">
+          <a href="/Vistas/home.jsp" class="btn btn-success">
                  Guardar
               </a> 
          
